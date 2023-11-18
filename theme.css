@@ -18,6 +18,11 @@ body.light-theme {
 	--btn-hover-color: #4f3674;
 	--input-border-color: #ccc;
 
+	--table-header-background-color:#4f3674;
+    --table-header-color: #fff;
+    --table-border-color: #ddd;
+    --table-hover-background-color: #d6a800;
+    --table-hover-color: #4f3674;
 }
 
 /* Styling for dark theme */
@@ -39,6 +44,13 @@ body.dark-theme {
 	--btn-hover-background-color: #7d4787;
 	--btn-hover-color: #fff;
 	--input-border-color: #303030;
+
+	--table-header-background-color:#D176E1;
+    --table-header-color: #fff;
+    --table-border-color: #303030;
+    --table-hover-background-color: #7d4787;
+    --table-hover-color: #fff;
+	
 }
 
 /* Styling the body */
@@ -134,4 +146,34 @@ h2,h3,h4 {
 	border: 1px solid var(--input-border-color);
 	border-radius: 4px;
 	box-sizing: border-box;
+}
+
+/* Styling for table headers */
+table {
+    width: 40%;
+	margin-left: 20px;
+    margin-bottom: 30px;
+	margin-top: 20px;
+    text-align: left;
+    text-indent: 2px;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: var(--table-header-background-color);
+    color: var(--table-header-color);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+}
+
+td, th {
+    border: 1px solid var(--table-border-color);
+    padding: 8px;
+}
+
+tr:hover {
+    background-color: var(--table-hover-background-color);
+    color: var(--table-hover-color);
+    cursor: pointer;
 }
